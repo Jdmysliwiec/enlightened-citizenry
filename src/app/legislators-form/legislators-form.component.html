@@ -1,0 +1,15 @@
+<form #findLegislatorsForm="ngForm" (ngSubmit)="findLegislators(findLegislatorsForm)">
+  <label for="branch">Branch:</label>
+  <select name="branch" ngModel>
+    <option value="senate">Senate</option>
+    <option value="house">House</option>
+  </select>
+  <label for="state">State</label>
+  <input type="text" name="state" ngModel>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="propublicaService.legislators">
+  <app-list-legislators [childFilterBy]="filterBy"></app-list-legislators>
+</div>

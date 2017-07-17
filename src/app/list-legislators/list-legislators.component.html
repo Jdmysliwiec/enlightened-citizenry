@@ -1,0 +1,3 @@
+<ul>
+  <li *ngFor="let legislator of propublicaService.legislators | filterState:childFilterBy">{{legislator.first_name}} {{legislator.last_name}}</li>
+</ul>
