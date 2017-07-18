@@ -1,3 +1,5 @@
-<ul>
-  <li *ngFor="let legislator of propublicaService.legislators | filterState:childFilterBy">{{legislator.first_name}} {{legislator.last_name}} <a routerLink="/member/{{legislator.id}}">&rarr;</a></li>
-</ul>
+<div *ngIf="childFilterBy">
+  <ul>
+    <li *ngFor="let legislator of propublicaService.legislators | filterState:childFilterBy">{{legislator.first_name}} {{legislator.last_name}} <a routerLink="/member/{{legislator.id}}">&rarr;</a></li>
+  </ul>
+</div>
