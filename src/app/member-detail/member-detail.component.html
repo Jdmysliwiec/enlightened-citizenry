@@ -8,4 +8,15 @@
     <h3>Bills Updated</h3>
     <li *ngFor="let bill of propublicaService.memberUpdated.bills"><a routerLink="/bill/{{bill.bill_id}}/{{bill.congress}}">{{bill.title}}</a></li>
   </ul>
+
+</div>
+<div *ngFor="let vote of propublicaService.voteRecord.votes">
+  <div class="well" *ngIf="vote.bill.title">
+    <h3>{{vote.bill.title}}</h3>
+    <p>{{vote.bill.latest_action}}</p>
+    <p>Question: {{vote.question}}</p>
+    <p>Position: {{vote.position}}</p>
+    <p>Result: {{vote.result}}</p>
+    <a href="{{vote.bill.bill_uri}}">Learn more @{{vote.bill.number}}</a>
+  </div>
 </div>

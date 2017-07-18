@@ -22,5 +22,6 @@ export class MemberDetailComponent implements OnInit {
     });
     this.propublicaService.getMemberBillsIntroduced(this.memberId);
     this.propublicaService.getMemberBillsUpdated(this.memberId);
+    this.propublicaService.getVoteRecord(this.memberId);
   }
 }
