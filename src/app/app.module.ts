@@ -10,6 +10,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ListLegislatorsComponent } from './list-legislators/list-legislators.component';
 import { LegislatorsFormComponent } from './legislators-form/legislators-form.component';
 import { FilterStatePipe } from './filter-state.pipe';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilterStatePipe } from './filter-state.pipe';
     WelcomeComponent,
     ListLegislatorsComponent,
     LegislatorsFormComponent,
-    FilterStatePipe
+    FilterStatePipe,
+    MemberDetailComponent
   ],
   imports: [
     BrowserModule,

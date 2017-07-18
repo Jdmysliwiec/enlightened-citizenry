@@ -1,0 +1,15 @@
+<p>
+  member-detail works! Id: {{memberId}}
+</p>
+
+<div *ngIf="propublicaService.memberIntroduced && propublicaService.memberUpdated">
+  <h2>{{propublicaService.memberIntroduced.name}}</h2>
+  <ul>
+    <h3>Bills Introduced</h3>
+    <li *ngFor="let bill of propublicaService.memberIntroduced.bills">{{bill.title}}</li>
+  </ul>
+  <ul>
+    <h3>Bills Updated</h3>
+    <li *ngFor="let bill of propublicaService.memberUpdated.bills">{{bill.title}}</li>
+  </ul>
+</div>
