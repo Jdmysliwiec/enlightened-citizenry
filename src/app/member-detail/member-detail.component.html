@@ -6,10 +6,10 @@
   <h2>{{propublicaService.memberIntroduced.name}}</h2>
   <ul>
     <h3>Bills Introduced</h3>
-    <li *ngFor="let bill of propublicaService.memberIntroduced.bills">{{bill.title}}</li>
+    <li *ngFor="let bill of propublicaService.memberIntroduced.bills"> <a routerLink="/bill/{{bill.bill_id}}/{{bill.congress}}">{{bill.title}}</a> </li>
   </ul>
   <ul>
     <h3>Bills Updated</h3>
-    <li *ngFor="let bill of propublicaService.memberUpdated.bills">{{bill.title}}</li>
+    <li *ngFor="let bill of propublicaService.memberUpdated.bills"><a routerLink="/bill/{{bill.bill_id}}/{{bill.congress}}">{{bill.title}}</a></li>
   </ul>
 </div>

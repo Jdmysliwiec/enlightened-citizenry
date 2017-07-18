@@ -1,4 +1,8 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Gov-O-Rama</h1>
+    <h2>Your Source For Government Shenanigan Inforama</h2>
+  </div>
+  <router-outlet></router-outlet>
+  <a routerLink="" [hidden]="checkRoute()">Start Over</a>
+</div>

@@ -11,6 +11,7 @@ import { ListLegislatorsComponent } from './list-legislators/list-legislators.co
 import { LegislatorsFormComponent } from './legislators-form/legislators-form.component';
 import { FilterStatePipe } from './filter-state.pipe';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { BillDetailComponent } from './bill-detail/bill-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     ListLegislatorsComponent,
     LegislatorsFormComponent,
     FilterStatePipe,
-    MemberDetailComponent
+    MemberDetailComponent,
+    BillDetailComponent
   ],
   imports: [
     BrowserModule,

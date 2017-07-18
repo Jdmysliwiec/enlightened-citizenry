@@ -1,0 +1,14 @@
+<div *ngIf="propublicaService.bill">
+  <h3>{{ propublicaService.bill.title}}</h3>
+  <div class="well">
+    <ul>
+      <li *ngIf="propublicaService.bill.bill_type === 'hr'">Date introduced to the House: {{propublicaService.bill.introduced_date}}</li>
+      <li *ngIf="propublicaService.bill.bill_type === 's'">Date introduced to the Senate: {{propublicaService.bill.introduced_date}}</li>
+      <li>Committee: {{propublicaService.bill.committees}}</li>
+      <li>Sponsor: {{propublicaService.bill.sponsor}} - {{propublicaService.bill.sponsor_party}}</li>
+      <li>Primary Subject: {{propublicaService.bill.primary_subject}}</li>
+      <li>Last major action: {{propublicaService.bill.latest_major_action}}</li>
+      <li><a target="_blank" href="{{propublicaService.bill.congressdotgov_url}}">{{propublicaService.bill.congressdotgov_url}}</a></li>
+    </ul>
+  </div>
+</div>
